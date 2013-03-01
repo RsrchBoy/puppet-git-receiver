@@ -152,6 +152,8 @@ cat <<EOF > "${confdir}/puppet.conf"
   node_terminus = exec
   external_nodes = `pwd`/$0
   templatedir=${DEST}/templates
+  prerun_command=/etc/puppet/etckeeper-commit-pre
+  postrun_command=/etc/puppet/etckeeper-commit-post
 EOF
 
 notice "Applying puppet manifests"
