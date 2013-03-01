@@ -149,11 +149,11 @@ mkdir -p $confdir/ssl
 
 cat <<EOF > "${confdir}/puppet.conf"
 [main]
-  node_terminus = exec
-  external_nodes = `pwd`/$0
-  templatedir=${DEST}/templates
-  prerun_command=/etc/puppet/etckeeper-commit-pre
-  postrun_command=/etc/puppet/etckeeper-commit-post
+  node_terminus   = exec
+  external_nodes  = `pwd`/$0
+  templatedir     = ${DEST}/templates
+  prerun_command  = /etc/puppet/etckeeper-commit-pre
+  postrun_command = /etc/puppet/etckeeper-commit-post
 EOF
 
 notice "Applying puppet manifests"
