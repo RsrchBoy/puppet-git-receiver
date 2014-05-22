@@ -1,3 +1,11 @@
+puppet-git-receiver (1.5.1+nmu1) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload (knew I should have added a "-0" release).
+  * Depend on puppet-common for the agent, not puppet (so as to not cause the
+    agent to autostart).
+
+ -- Chris Weyl <cweyl@alumni.drew.edu>  Wed, 21 May 2014 23:00:29 -0700
+
 puppet-git-receiver (1.5.1) saucy; urgency=low
 
   * postinst: Use sudo group if it exists else admin group
