@@ -1,3 +1,24 @@
+puppet-git-receiver (1.5.4) trusty; urgency=low
+
+  * postinst: Fix installation on servers with an empty sudo group
+
+ -- John Leach <john@brightbox.co.uk>  Wed, 29 Apr 2015 13:43:34 +0100
+
+puppet-git-receiver (1.5.3) trusty; urgency=low
+
+  * postinst: Make git dir symlink idempotent so upgrades work
+  * puppet-git-retriever: Add remote to puppet.git repo
+  * puppet-git-reapply: Add update option to run a 'git fetch' first
+
+ -- Neil Wilson <neil@aldur.co.uk>  Fri, 20 Dec 2013 11:28:49 +0000
+
+puppet-git-receiver (1.5.2) saucy; urgency=low
+
+  * puppet-git-retriever: Pull the git archive from a source and apply
+  * puppet-git-reapply: Reapply the existing puppet archive
+
+ -- Neil Wilson <neil@aldur.co.uk>  Thu, 19 Dec 2013 17:45:11 +0000
+
 puppet-git-receiver (1.5.1+nmu1) UNRELEASED; urgency=medium
 
   * Non-maintainer upload (knew I should have added a "-0" release).
@@ -15,6 +36,13 @@ puppet-git-receiver (1.5.1) saucy; urgency=low
 
  -- Neil Wilson <neil@aldur.co.uk>  Thu, 28 Nov 2013 11:43:44 +0000
 
+puppet-git-receiver (1.5.0-2) precise; urgency=low
+
+  * admin group is named sudo on recent ubuntus. Support both.
+  * Depend on either git or git-core
+
+ -- John Leach <john@brightbox.co.uk>  Thu, 12 Sep 2013 10:54:15 +0100
+
 puppet-git-receiver (1.5.0-1.2) UNRELEASED; urgency=low
 
   * Non-maintainer upload.
@@ -29,7 +57,7 @@ puppet-git-receiver (1.5.0-1.1) UNRELEASED; urgency=low
 
  -- Chris Weyl <cweyl@alumni.drew.edu>  Sun, 15 Sep 2013 17:05:54 -0700
 
-puppet-git-receiver (1.5.0) precise; urgency=low
+puppet-git-receiver (1.5.0-1) precise; urgency=low
 
   * Support for librarian-puppet
   * Ensure the default git repo is accessible by users in the admin group
