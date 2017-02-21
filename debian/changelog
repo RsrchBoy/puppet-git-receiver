@@ -1,3 +1,10 @@
+puppet-git-receiver (1.5.4~16.04~ppa2) xenial; urgency=medium
+
+  * Accept hiera >= 2.0.0 in place of ruby-hiera, as this appears to have
+    changed after trusty.
+
+ -- Chris Weyl <cweyl@alumni.drew.edu>  Mon, 20 Feb 2017 22:18:27 -0600
+
 puppet-git-receiver (1.5.4~16.04~ppa1) xenial; urgency=medium
 
   * Build for xenial.
